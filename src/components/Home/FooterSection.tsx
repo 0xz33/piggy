@@ -23,10 +23,10 @@ export default function FooterSection() {
           className="w-full h-auto"
         />
       </div>
-      <p className="text-5xl font-[500] italic mt-8">IS FOR THE PEOPLE</p>
+      <p className="text-5xl font-[500] mt-8">IS FOR THE PEOPLE</p>
       <button
         onClick={scrollToTop}
-        className="mt-8 border-2 border-white px-8 py-3 font-[500] italic hover:bg-white hover:text-black transition-all"
+        className="mt-8 border-2 border-white px-8 py-3 font-[500] hover:bg-white hover:text-black transition-all"
         aria-label="Scroll to top of page"
       >
         GO TO TOP

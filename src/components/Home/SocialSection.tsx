@@ -19,7 +19,7 @@ export default function SocialSection() {
   return (
     <section className="relative py-20">
       <div className="container mx-auto px-4 flex flex-col items-center text-center">
-        <h2 className="text-4xl font-[900] italic mb-8 text-black">ALL MY LINKS</h2>
+        <h2 className="text-4xl font-[900] mb-8 text-black">ALL MY LINKS</h2>
         {/* Social Icons */}
         <div className="flex justify-center gap-8 mb-20">
           {SOCIAL_LINKS.map((link) => (
@@ -40,13 +40,13 @@ export default function SocialSection() {
         </div>
 
         {/* Nerd Links */}
-        <h2 className="text-4xl font-[900] italic mb-8 text-black">ALL MY NERD LINKS</h2>
+        <h2 className="text-4xl font-[900] mb-8 text-black">ALL MY NERD LINKS</h2>
         <div className="flex flex-col gap-4 w-full max-w-md">
           {NERD_LINKS.map((link) => (
             <a
               key={link.label}
               href={link.href}
-              className="border border-white px-8 py-4 font-[500] italic text-xl hover:bg-white hover:text-[#FF1493] transition-colors"
+              className="border border-white px-8 py-4 font-[500] text-xl hover:bg-white hover:text-[#FF1493] transition-colors"
             >
               {link.label}
             </a>

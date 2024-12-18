@@ -27,7 +27,7 @@ export default function CountdownSection() {
     <>
       <section className="relative pt-20 text-white text-center bg-red">
         <div className="container mx-auto px-4 flex flex-col items-center gap-4">
-          <div className="bg-white text-deeppink px-8 py-2 font-[900] italic text-3xl">
+          <div className="bg-white text-deeppink px-8 py-2 font-[900] text-3xl">
             IMPORTANT!
           </div>
 
@@ -36,13 +36,13 @@ export default function CountdownSection() {
           </div>
 
           <div className="flex flex-col items-center">
-            <h2 className="text-[clamp(4rem,10vw,8rem)] font-[900] italic leading-none">
+            <h2 className="text-[clamp(4rem,10vw,8rem)] font-[900] leading-none">
               {daysLeft} days left
             </h2>
-            <p className="text-[clamp(2rem,4vw,3rem)] font-[500] italic">
+            <p className="text-[clamp(2rem,4vw,3rem)] font-[500]">
               until
             </p>
-            <p className="text-[clamp(2.5rem,5vw,4rem)] font-[900] italic">
+            <p className="text-[clamp(2.5rem,5vw,4rem)] font-[900]">
               THE CHRISTMAS ROAST
             </p>
           </div>
@@ -52,19 +52,19 @@ export default function CountdownSection() {
           </div>
 
           <div className="max-w-3xl text-center">
-            <p className="text-[clamp(1.5rem,3vw,2rem)] font-[500] italic mb-2">
+            <p className="text-[clamp(1.5rem,3vw,2rem)] font-[500] mb-2">
               ALL
             </p>
-            <p className="text-[clamp(2rem,4vw,3rem)] font-[900] italic mb-2">
+            <p className="text-[clamp(2rem,4vw,3rem)] font-[900] mb-2">
               UNCLAIMED PIGGY(~10%)
             </p>
-            <p className="text-[clamp(1.5rem,3vw,2rem)] font-[500] italic mb-4">
+            <p className="text-[clamp(1.5rem,3vw,2rem)] font-[500] mb-4">
               WILL BE
             </p>
           </div>
 
           <div className="relative w-full h-40 overflow-hidden">
-            <div className="absolute inset-0 whitespace-nowrap text-[clamp(4rem,8vw,8rem)] font-[900] italic flex">
+            <div className="absolute inset-0 whitespace-nowrap text-[clamp(4rem,8vw,8rem)] font-[900] flex">
               <div className="animate-marquee flex-shrink-0 flex">
                 <div className="text-stroke-2 flex-shrink-0 ">
                   ROASTED ROASTED ROASTED ROASTED ROASTED&nbsp;
@@ -92,16 +92,16 @@ export default function CountdownSection() {
         </div>
       </section>
       <div className="flex flex-col items-center justify-center text-center bg-red h-auto py-32 px-2">
-        <p className="text-[clamp(5rem,16vw,16rem)] font-[900] italic leading-[0.8]">
+        <p className="text-[clamp(5rem,16vw,16rem)] font-[900] leading-[0.8]">
           A
         </p>
-        <p className="text-[clamp(5rem,16vw,16rem)] font-[900] italic leading-[0.8]">
+        <p className="text-[clamp(5rem,16vw,16rem)] font-[900] leading-[0.8]">
           NEW
         </p>
-        <p className="text-[clamp(5rem,16vw,16rem)] font-[900] italic leading-[0.8]">
+        <p className="text-[clamp(5rem,16vw,16rem)] font-[900] leading-[0.8]">
           ERA
         </p>
-        <p className="text-[clamp(8rem,20vw,20rem)] font-[900] italic leading-[1.0]">
+        <p className="text-[clamp(8rem,20vw,20rem)] font-[900] leading-[1.0]">
           BEGINS
         </p>
         <div className="w-full max-w-xs mx-auto">

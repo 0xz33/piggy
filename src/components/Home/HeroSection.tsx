@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section className="relative h-screen flex flex-col bg-white max-h-screen">
       {/* Background Text Pattern - Static */}
       <div className="absolute inset-0 w-full overflow-hidden select-none pointer-events-none">
-        <div className="whitespace-nowrap text-white/30 font-[900] italic text-[clamp(2rem,4vw,2.5rem)] leading-[50px] -z-2">
+        <div className="whitespace-nowrap text-white/30 font-[900] text-[clamp(2rem,4vw,2.5rem)] leading-[50px] -z-2">
           {Array.from({ length: 20 }).map((_, i) => (
             <div key={i} className="whitespace-nowrap">
               {Array.from({ length: 8 }).map((_, j) => (
@@ -34,7 +34,7 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row">
             <a
               href="https://app.uniswap.org/explore/tokens/base/0xe3cf8dbcbdc9b220ddead0bd6342e245daff934d"
-              className="bg-black text-deeppink pt-8 pb-6 py-3 rounded-full min-w-[240px] font-[900] italic text-3xl hover:bg-lime hover:text-black transition-all"
+              className="bg-black text-deeppink pt-8 pb-6 py-3 rounded-full min-w-[240px] font-[900] text-3xl hover:bg-lime hover:text-black transition-all"
             >
               Buy $PIGGY
             </a>
@@ -43,7 +43,7 @@ export default function HeroSection() {
 
         {/* Powered by Superform */}
         <div className="max-w-xs mx-auto mt-4 text-center border-4 border-black z-10 absolute left-1/2 -translate-x-1/2">
-          <p className="bg-black text-white text-xl font-[500] italic px-2 py-1">
+          <p className="bg-black text-white text-xl font-[500] px-2 py-1">
             POWERED BY
           </p>
           <div className="bg-white p-4">

@@ -6,7 +6,7 @@ export default function HowToBuySection() {
   return (
     <section className="bg-deeppink py-32">
       <div className="container mx-auto px-4">
-        <h2 className="text-white font-[900] italic text-6xl text-center mb-16">
+        <h2 className="text-white font-[900] text-6xl text-center mb-16">
           HOW TO BUY $PIGGY<br />ON BASE
         </h2>
 
@@ -70,7 +70,7 @@ export default function HowToBuySection() {
 
         {/* Powered By Base */}
         <div className="max-w-xs mx-auto text-center border-8 border-black mt-16">
-          <p className="bg-black text-white text-2xl font-[500] italic px-4 py-2">
+          <p className="bg-black text-white text-2xl font-[500] px-4 py-2">
             POWERED BY
           </p>
           <div className="bg-white p-8">
