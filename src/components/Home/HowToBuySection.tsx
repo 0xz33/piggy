@@ -34,7 +34,7 @@ export default function HowToBuySection() {
                     className="absolute -bottom-2 right-[0]"
                   />
                 </div>
-                <span className="text-deeppink font-bold text-2xl underline">BUY BASE ETH</span>
+                <span className="text-deeppink font-bold text-2xl underline">GET BASE ETH</span>
               </div>
             </a>
           </div>

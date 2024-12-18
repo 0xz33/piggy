@@ -3,13 +3,14 @@ import Image from 'next/image'
 const SOCIAL_LINKS = [
   { href: "https://x.com/based_piggy", icon: "/icons/logo-01.png", alt: "X" },
   { href: "https://t.me/piggyisforthepeople", icon: "/icons/logo-02.png", alt: "Telegram" },
-  { href: "https://dextools.io/app/en/base/pair-explorer/0x111111111117dc0aa78b770fa6a738034120c302", icon: "/icons/logo-03.png", alt: "Dextools" },
-  { href: "https://basescan.org/token/0xe3CF8dBcBDC9B220ddeaD0bD6342E245DAFF934d", icon: "/icons/logo-04.png", alt: "BaseScan" },
+  { href: "https://dexscreener.com/base/0xf16eaf2801d9ded435b7fc5f0ec78048c4142c3e", icon: "/icons/logo-03.png", alt: "Dexscreener" },
+  { href: "/onlypiggys", icon: "/icons/logo-04.png", alt: "OnlyPiggys" },
 ] as const;
 
 const NERD_LINKS = [
   { href: "https://www.coingecko.com/en/coins/piggy-2", label: "COINGECKO" },
   { href: "https://app.uniswap.org/explore/tokens/base/0xe3cf8dbcbdc9b220ddead0bd6342e245daff934d", label: "UNISWAP" },
+  { href: "https://dexscreener.com/base/0xf16eaf2801d9ded435b7fc5f0ec78048c4142c3e", label: "DEXSCREENER" },
   { href: "https://basescan.org/token/0xe3CF8dBcBDC9B220ddeaD0bD6342E245DAFF934d", label: "BASESCAN" },
   { href: "https://superform.xyz", label: "GO TO SUPERFORM" },
 ] as const;
@@ -39,7 +40,7 @@ export default function SocialSection() {
         </div>
 
         {/* Nerd Links */}
-        <h2 className="text-4xl font-[900] italic mb-8 text-black">NERD LINKS</h2>
+        <h2 className="text-4xl font-[900] italic mb-8 text-black">ALL MY NERD LINKS</h2>
         <div className="flex flex-col gap-4 w-full max-w-md">
           {NERD_LINKS.map((link) => (
             <a

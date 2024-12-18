@@ -5,6 +5,8 @@ import AdvancedFinanceSection from './AdvancedFinanceSection'
 import FooterSection from './FooterSection'
 import SocialSection from './SocialSection'
 import TheOinks from './TheOinks'
+import StatsSection from './StatsSection'
+import FAQSection from './FAQSection'
 
 export default function HomePage() {
   return (
@@ -15,8 +17,7 @@ export default function HomePage() {
       <SocialSection />
       <TheOinks />
       <CountdownSection />
-      {/* <NewEraSection /> */}
-      {/* <FAQSection /> */}
+      <FAQSection />
       <AdvancedFinanceSection />
       <FooterSection />
     </div>
