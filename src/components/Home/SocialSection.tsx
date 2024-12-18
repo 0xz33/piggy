@@ -10,7 +10,7 @@ const SOCIAL_LINKS = [
 const NERD_LINKS = [
   { href: "https://www.coingecko.com/en/coins/piggy-2", label: "COINGECKO" },
   { href: "https://app.uniswap.org/explore/tokens/base/0xe3cf8dbcbdc9b220ddead0bd6342e245daff934d", label: "UNISWAP" },
-  { href: "https://dexscreener.com/base/0xf16eaf2801d9ded435b7fc5f0ec78048c4142c3e", label: "DEXSCREENER" },
+  { href: "https://www.dextools.io/app/en/base/pair-explorer/0xf16eaf2801d9ded435b7fc5f0ec78048c4142c3e?t=1734498696466", label: "DEXTOOLS" },
   { href: "https://basescan.org/token/0xe3CF8dBcBDC9B220ddeaD0bD6342E245DAFF934d", label: "BASESCAN" },
   { href: "https://superform.xyz", label: "GO TO SUPERFORM" },
 ] as const;
@@ -21,7 +21,7 @@ export default function SocialSection() {
       <div className="container mx-auto px-4 flex flex-col items-center text-center">
         <h2 className="text-4xl font-[900] mb-8 text-black">ALL MY LINKS</h2>
         {/* Social Icons */}
-        <div className="flex justify-center gap-8 mb-20">
+        <div className="flex justify-center gap-8 mb-8">
           {SOCIAL_LINKS.map((link) => (
             <a
               key={link.alt}
@@ -33,7 +33,7 @@ export default function SocialSection() {
                 alt={link.alt}
                 width={48}
                 height={48}
-                className="w-12 h-12 transition-all group-hover:invert"
+                className="w-12 h-12 transition-all"
               />
             </a>
           ))}

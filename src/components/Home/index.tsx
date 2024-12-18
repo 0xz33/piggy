@@ -18,7 +18,7 @@ export default function HomePage() {
       <TheOinks />
       <CountdownSection />
       <FAQSection />
-      <AdvancedFinanceSection />
+      {/* <AdvancedFinanceSection /> */}
       <FooterSection />
     </div>
   )
