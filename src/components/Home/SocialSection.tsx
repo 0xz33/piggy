@@ -40,7 +40,6 @@ export default function SocialSection() {
         </div>
 
         {/* Nerd Links */}
-        <h2 className="text-4xl font-[900] mb-8 text-black">ALL MY NERD LINKS</h2>
         <div className="flex flex-col gap-4 w-full max-w-md">
           {NERD_LINKS.map((link) => (
             <a
