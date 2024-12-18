@@ -16,8 +16,8 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 flex-1 flex flex-col items-center justify-center">
-        <div className="flex flex-col items-center justify-center text-center z-10">
+      <div className="container mx-auto px-4 flex-1 flex flex-col items-center justify-between">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center text-center z-10">
           {/* Piggy Logo */}
           <div className="w-full max-w-[500px] mb-8">
             <Image
@@ -48,18 +48,17 @@ export default function HeroSection() {
         </div>
 
         {/* Powered by Superform */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center px-2 flex flex-col items-center">
-          <p className="text-2xl font-[500] italic bg-black px-4 py-2 w-full">
+        <div className="max-w-xs mx-auto text-center border-4 border-black z-10 absolute bottom-4 left-1/2 -translate-x-1/2">
+          <p className="bg-black text-white text-xl font-[500] italic px-2 py-1">
             POWERED BY
           </p>
-          <div className="bg-white p-4 w-full flex items-center justify-center">
+          <div className="bg-white p-4">
             <Image
-              src="/SuperformLogo.svg"
-              alt="Superform"
+              src="/superformLogo.svg"
+              alt="Base"
               width={200}
               height={40}
-              className="w-auto h-8"
-              priority
+              className="w-auto h-8 mx-auto"
             />
           </div>
         </div>

@@ -1,99 +1,76 @@
+'use client'
+
 import Image from 'next/image'
 
 export default function HowToBuySection() {
-  const socialLinks = [
-    { icon: "/icons/logo-01.png", alt: "X (Twitter)", href: "#" },
-    { icon: "/icons/logo-02.png", alt: "Telegram", href: "#" },
-    { icon: "/icons/logo-03.png", alt: "Dextools", href: "#" },
-    { icon: "/icons/logo-04.png", alt: "Etherscan", href: "#" },
-  ]
-
-  const buyLinks = [
-    {
-      title: "BUY BASE ETH",
-      icon: "/icons/ethToken.png",
-      href: "#",
-      className: "bg-[#4F6EF7]"
-    },
-    {
-      title: "BUY PIGGY",
-      icon: "/icons/piggyToken.png",
-      href: "#",
-      className: "bg-deeppink"
-    }
-  ]
-
   return (
-    <section className="relative py-20">
-      <div className="container mx-auto px-4 text-center">
-        {/* <h2 className="text-4xl font-[900] italic mb-12">HOW TO BUY $PIGGY ON BASE</h2>
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-20">
-          <div className="flex flex-col items-center bg-white p-4 ">
-            <p className="text-xl font-[500] text-black italic mb-4">STEP ONE</p>
-            <Image
-              src="/icons/ethToken.png"
-              alt="Buy ETH"
-              width={100}
-              height={100}
-              className="mb-4"
-            />
-            <p className="font-[500] italic text-deeppink">BUY BASE ETH</p>
-          </div>
-          <div className="flex flex-col items-center bg-white p-4">
-            <p className="text-xl font-[500] text-black italic mb-4">STEP TWO</p>
-            <Image
-              src="/icons/piggyToken.png"
-              alt="Bridge to Base"
-              width={100}
-              height={100}
-              className="mb-4"
-            />
-            <p className="font-[500] italic text-deeppink">BUY $PIGGY</p>
-          </div>
-        </div> */}
+    <section className="bg-deeppink py-32">
+      <div className="container mx-auto px-4">
+        <h2 className="text-white font-[900] italic text-6xl text-center mb-16">
+          HOW TO BUY $PIGGY<br />ON BASE
+        </h2>
 
-        <div className="max-w-2xl mx-auto mb-20">
-          <h2 className="text-4xl font-[900] italic mb-8 text-black">ALL MY LINKS</h2>
-          <div className="grid grid-cols-4 gap-12 mb-16 ">
-            {socialLinks.map((link, index) => (
-              <a
-                key={index}
-                href={link.href}
-                className="p-6 aspect-square flex items-center justify-center hover:opacity-90 transition-opacity border border-white p-4"
-              >
-                <Image
-                  src={link.icon}
-                  alt={link.alt}
-                  width={40}
-                  height={40}
-                  className="w-full h-auto"
-                />
-              </a>
-            ))}
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {/* Step One */}
+          <div className="flex flex-col items-center">
+            <h3 className="text-white text-4xl font-bold mb-8">STEP ONE (1)</h3>
+            <a
+              href="https://jumper.exchange/?fromChain=1&fromToken=0x0000000000000000000000000000000000000000&toChain=8453&toToken=0x0000000000000000000000000000000000000000"
+              className="block w-full hover:scale-[1.02] transition-transform"
+            >
+              <div className="bg-white p-8 w-full aspect-video flex flex-col items-center justify-center">
+                <div className="relative mb-4">
+                  <Image
+                    src="/icons/ethToken.png"
+                    alt="BASE Token"
+                    width={80}
+                    height={80}
+                  />
+                  <Image
+                    src="/icons/baseToken.png"
+                    alt="Base Logo"
+                    width={30}
+                    height={30}
+                    className="absolute -bottom-2 right-[0]"
+                  />
+                </div>
+                <span className="text-deeppink font-bold text-2xl underline">BUY BASE ETH</span>
+              </div>
+            </a>
           </div>
 
-          {/* <div className="grid sm:grid-cols-2 gap-8">
-            {buyLinks.map((link, index) => (
-              <a
-                key={index}
-                href={link.href}
-                className={`${link.className} p-6 flex items-center justify-center gap-4 hover:opacity-90 transition-opacity`}
-              >
-                <Image
-                  src={link.icon}
-                  alt={link.title}
-                  width={40}
-                  height={40}
-                  className="w-10 h-10"
-                />
-                <span className="text-white font-[900] italic">{link.title}</span>
-              </a>
-            ))}
-          </div> */}
+          {/* Step Two */}
+          <div className="flex flex-col items-center">
+            <h3 className="text-white text-4xl font-bold mb-8">STEP TWO (2)</h3>
+            <a
+              href="https://app.uniswap.org/explore/tokens/base/0xe3cf8dbcbdc9b220ddead0bd6342e245daff934d"
+              className="block w-full hover:scale-[1.02] transition-transform"
+            >
+              <div className="bg-white p-8 w-full aspect-video flex flex-col items-center justify-center">
+                <div className="relative mb-4">
+                  <Image
+                    src="/icons/piggyToken.png"
+                    alt="PIGGY Token"
+                    width={80}
+                    height={80}
+                  />
+                  <Image
+                    src="/icons/baseToken.png"
+                    alt="Base Logo"
+                    width={30}
+                    height={30}
+                    className="absolute -bottom-2 right-[0]"
+                  />
+                </div>
+                <span className="text-deeppink font-bold text-2xl underline">BUY PIGGY</span>
+              </div>
+            </a>
+          </div>
         </div>
 
-        <div className="max-w-xs mx-auto text-center border-8 border-black">
-          <p className="bg-black text-white text-2xl font-[500] italic px-4 py-2 ">
+        {/* Powered By Base */}
+        <div className="max-w-xs mx-auto text-center border-8 border-black mt-16">
+          <p className="bg-black text-white text-2xl font-[500] italic px-4 py-2">
             POWERED BY
           </p>
           <div className="bg-white p-8">

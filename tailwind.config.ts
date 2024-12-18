@@ -11,23 +11,39 @@ const config: Config = {
       colors: {
         deeppink: "#FF1493",
         black: "#000000",
+        lime: "#00FF00",
+        red: "#FF0000",
       },
       fontFamily: {
         helvetica: ["var(--font-helvetica)"],
+        bdex: ["var(--font-bdex)"],
       },
       keyframes: {
-        slide: {
-          "0%": { transform: "translateY(0)" },
-          "100%": { transform: "translateY(-50%)" },
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
         },
       },
       animation: {
-        slide: "slide 60s linear infinite",
-        "slide-2": "slide 60s linear infinite",
+        marquee: "marquee 100s linear infinite",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const utilities = {
+        ".text-stroke": {
+          "-webkit-text-stroke": "1px white",
+          color: "transparent",
+        },
+        ".text-stroke-2": {
+          "-webkit-text-stroke": "2px white",
+          color: "transparent",
+        },
+      };
+      addUtilities(utilities);
+    },
+  ],
 };
 
 export default config;

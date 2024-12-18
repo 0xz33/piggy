@@ -26,22 +26,6 @@ export default function StatsSection() {
             30,000
           </p>
         </div>
-
-        {/* Action Buttons */}
-        <div className="flex flex-col gap-4 w-full max-w-md">
-          <a
-            href="#"
-            className="bg-white text-[#FF1493] px-8 py-4 font-[900] italic text-2xl hover:bg-opacity-90 transition-all"
-          >
-            BUY $PIGGY
-          </a>
-          <a
-            href="#"
-            className="border-2 border-white px-8 py-4 font-[900] italic text-2xl hover:bg-white hover:text-[#FF1493] transition-all"
-          >
-            BUY GAS FOR BASE
-          </a>
-        </div>
       </div>
     </section>
   )
