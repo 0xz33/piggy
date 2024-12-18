@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        deeppink: "#FF1493",
+        black: "#000000",
+      },
       fontFamily: {
         helvetica: ["var(--font-helvetica)"],
       },

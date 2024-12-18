@@ -5,8 +5,8 @@ export default function HeroSection() {
     <section className="relative h-screen flex flex-col">
       {/* Background Text Pattern - Static */}
       <div className="absolute inset-0 w-full overflow-hidden select-none pointer-events-none">
-        <div className="whitespace-nowrap text-white/20 font-[900] italic text-[clamp(2rem,4vw,3rem)] leading-[50px]">
-          {Array.from({ length: 10 }).map((_, i) => (
+        <div className="whitespace-nowrap text-white/30 font-[900] italic text-[clamp(2rem,4vw,2.5rem)] leading-[50px] -z-2">
+          {Array.from({ length: 20 }).map((_, i) => (
             <div key={i} className="whitespace-nowrap">
               {Array.from({ length: 8 }).map((_, j) => (
                 <span key={j} className="inline-block mx-2">PIGGY IS FOR THE PEOPLE</span>
@@ -17,7 +17,7 @@ export default function HeroSection() {
       </div>
 
       <div className="container mx-auto px-4 flex-1 flex flex-col items-center justify-center">
-        <div className="flex flex-col items-center justify-center text-center">
+        <div className="flex flex-col items-center justify-center text-center z-10">
           {/* Piggy Logo */}
           <div className="w-full max-w-[500px] mb-8">
             <Image
